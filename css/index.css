@@ -124,10 +124,11 @@ body {
 
 #header {
   width: 1200px;
-  height: 167px;
-  overflow: hidden;
+  /* height: 167px; */
+  /* overflow: hidden; */
   margin: auto;
   position: relative;
+  margin-bottom: 20px;
 }
 #header h1 a {
   display: block;
@@ -144,16 +145,18 @@ body {
 }
 
 #nav {
-  /* width: 1200px;
+  width: 1200px;
   margin: auto;
-  margin-top: 40px;
+  margin-top: 30px;
   box-sizing: border-box;
-  text-align: center; */
-  position: absolute;
+  text-align: center;
+  position: relative;
+  z-index: 10px;
+  /* position: absolute;
   left: 0;
   width: 100%;
   top: 100px;
-  text-align: center;
+  text-align: center; */
 }
 #nav > ul {
   display: inline-block;
@@ -163,11 +166,17 @@ body {
   width: 180px;
   position: relative;
 }
-/* #nav > ul {
-  display: inline-block;
-} */
+.dnav {
+  position: absolute;
+  z-index: 100;
+  width: 180px;
+  margin-top: 26px;
+  background: #fff;
+  height: 150px;
+  display: none;
+}
 #nav > ul > li > a {
-  font-size: 18px;
+  font-size: 19px;
   color: #292929;
   font-weight: bold;
   letter-spacing: -0.04em;
@@ -176,27 +185,22 @@ body {
   padding-top: 20px;
   display: block;
 }
-
-#nav > ul > li {
-  /* float: left; */
-  /* margin-top: 40px; */
+.dnav ul li {
+  font-size: 15px;
+  margin-top: 10px;
 }
+.dnav ul li a {
+  color: #666666;
+}
+
 #nav ul ul {
   display: none;
 }
-.menu01 li {
-  /* font-size: 18px; */
-  /* margin: 0px 70px; */
-  /* font-weight: bold; */
-}
-/* .menu_01 {
-  margin-left: 209px;
-} */
 
 .nav_02 {
   position: absolute;
   font-size: 12px;
-  top: 14px;
+  top: -10px;
   right: 50px;
 }
 .menu02 li {
@@ -219,16 +223,6 @@ body {
   margin-bottom: 60px;
   box-sizing: border-box;
 }
-
-/* .bg_img {
-  width: 1920px;
-  height: 650px;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  margin-left: -960px;
-  z-index: 15;
-} */
 
 .event_01 {
   display: block;
@@ -557,10 +551,6 @@ body {
   display: inline-block;
   line-height: 100%;
 }
-
-/* .ft_info.mo_info {
-  display: none;
-} */
 
 .ft_info span::before,
 .ft_info2 span::before {
