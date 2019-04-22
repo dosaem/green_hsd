@@ -94,111 +94,32 @@
         </div>
       </div>
       <div id="main">
-        <div class="main_slide">
-          <ul class="bg_img">
-            <li class="event_01">이벤트01</li>
-            <li class="event_02">이벤트02</li>
-            <li class="event_03">이벤트03</li>
-            <li class="event_04">이벤트04</li>
-            <!-- <li>
-              <a><img src="images/main_slide_01.jpg" alt="한솥"/></a>
-            </li>
-            <li>
-              <a><img src="images/main_slide_02.jpg" alt="한솥"/></a>
-            </li>
-            <li>
-              <a><img src="images/main_slide_03.jpg" alt="한솥"/></a>
-            </li>
-            <li>
-              <a><img src="images/main_slide_04.jpg" alt="한솥"/></a>
-            </li> -->
-          </ul>
-        </div>
-        <div class="best_menu">
-          <div class="best_menu_box">
-            <h2>베스트 메뉴</h2>
-            <div class="tab">
-              <ul>
-                <li id="onLi"><a href="#">프리미엄</a></li>
-                <li><a href="#">고메이</a></li>
-                <li><a href="#">사각도시락</a></li>
-                <li><a href="#">보올도시락</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="bm_premium">
-            <ul>
-              <li class="pbm_01">
-                <a href="#"></a>
-                <p class="mn_name">진달래</p>
-                <p class="v_name">7,000원</p>
-              </li>
-              <li class="pbm_02">
-                <a href="#"></a>
-                <p class="mn_name">매화(치킨,연어구이)</p>
-                <p class="v_name">10,000원</p>
-              </li>
-              <li class="pbm_03">
-                <a href="#"></a>
-                <p class="mn_name">개나리(순살고등어데리야끼)</p>
-                <p class="v_name">8,000원</p>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="good_food_mat">
-          <h2>좋은 식재료</h2>
-          <div class="gfm_text">
-            <h3>식재료 앞에서는<br />한없이<br />까다롭습니다.</h3>
+        <div class="register_box">
+          <h2>회원가입</h2>
+          <form name="" action="php/get.php" method="POST" class="input_area">
             <p>
-              맑고 깨끗한 자연 환경 속에서 재배된 식재료가<br />
-              아니면 한솥이 될 수 없습니다.<br />
-              모든 식재료는 고객분들이 안심하고 드실 수 있도록<br />
-              엄격한 기준 아래선별됩니다.
+              <input type="text" placeholder="아이디를 입력하세요" name="uid" />
             </p>
-            <a href="gfm.html"></a>
-          </div>
-        </div>
-        <div class="menu_bottom">
-          <div class="news">
-            <h2>새소식</h2>
-            <h3>
-              한솥의 다양한 소식을 <br />
-              빠르게 전달해 드립니다.
-            </h3>
-            <ul>
-              <li>한솥도시락 3월 신메뉴 ‘버터간장 스크램블’ 한정 판매</li>
-              <li>찹쌀 탕수육 출시 및 프로모션 실시</li>
-              <li>‘100원씩 기부되는 착한도시락’ 행사</li>
-              <li>2019 소비자 선정 최고의 브랜드 대상</li>
-              <li>한솥도시락 요일별 할인행사 실시</li>
-            </ul>
-          </div>
-          <div class="find_store">
-            <h2>매장찾기</h2>
-            <h3>
-              가까운 한솥 매장을 <br />
-              확인해보세요.
-            </h3>
-            <div class="find_store_search">
-              <form name="findstore" method="post" action="#">
-                <input
-                  id="store_search"
-                  name="main_search"
-                  title="매장검색"
-                  placeholder="FIND A STORE"
-                />
-                <a href="#">
-                  <img
-                    src="images/findstore.jpg"
-                    width="27px"
-                    height="27px"
-                    alt="검색"
-                  />
-                </a>
-              </form>
-            </div>
-          </div>
+            <p>
+              <input
+                type="password"
+                placeholder="비밀번호를 입력하세요"
+                name="upwd"
+              />
+            </p>
+            <p>
+              <input
+                type="password"
+                placeholder="비밀번호를 입력하세요"
+                name="upwdCheck"
+              />
+            </p>
+            <p class="btn_group">
+              <button class="disabled" name="btnRegister">
+                가입하기
+              </button>
+            </p>
+          </form>
         </div>
       </div>
       <div id="footer">
