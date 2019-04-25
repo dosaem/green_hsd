@@ -96,15 +96,26 @@
       <div id="main">
         <div class="register_box">
           <h2>회원가입</h2>
-          <form name="" action="php/get.php" method="POST" class="input_area">
+          <form
+            name="register_form"
+            action="php/insert.php"
+            method="POST"
+            class="input_area"
+          >
             <p>
-              <input type="text" placeholder="아이디를 입력하세요" name="uid" />
+              <input
+                type="text"
+                placeholder="아이디를 입력하세요"
+                name="uid"
+                id="uid"
+              />
             </p>
             <p>
               <input
                 type="password"
                 placeholder="비밀번호를 입력하세요"
-                name="upwd"
+                name="pwd"
+                id="pwd"
               />
             </p>
             <p>
@@ -114,8 +125,24 @@
                 name="upwdCheck"
               />
             </p>
+            <p>
+              <input
+                type="text"
+                placeholder="이름을 입력하세요"
+                name="uname"
+                id="uname"
+              />
+            </p>
+            <p>
+              <input
+                type="text"
+                placeholder="'-' 없이 휴대폰번호를 입력하세요"
+                name="tel"
+                id="tel"
+              />
+            </p>
             <p class="btn_group">
-              <button class="disabled" name="btnRegister">
+              <button id="regiBtn" class="disabled" name="btnRegister">
                 가입하기
               </button>
             </p>

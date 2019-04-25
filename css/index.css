@@ -129,6 +129,7 @@ body {
   margin: auto;
   position: relative;
   margin-bottom: 20px;
+  /* border-bottom: 200px #f2c000; */
 }
 #header h1 a {
   display: block;
@@ -210,6 +211,7 @@ body {
 
 #main {
   position: relative;
+  width: 100%;
 }
 .main_slide {
   width: 100%;
