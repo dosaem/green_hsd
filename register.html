@@ -31,6 +31,7 @@
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/jquery.bxslider.js"></script>
     <script src="js/index.js"></script>
+    <script src="js/register.js"></script>
   </head>
   <body>
     <div id="wrap">
@@ -103,6 +104,7 @@
             action="php/insert.php"
             method="POST"
             class="input_area"
+            id="inputForm"
           >
             <p>
               <input
@@ -112,6 +114,7 @@
                 id="uid"
               />
             </p>
+            <p id="rst"></p>
             <p>
               <input
                 type="password"
@@ -143,10 +146,15 @@
                 id="tel"
               />
             </p>
-            <p class="btn_group">
+            <!-- <p class="btn_group">
               <button id="regiBtn" class="regiBtn" name="btnRegister">
                 가입하기
               </button>
+            </p> -->
+            <p class="btn_group">
+              <input type="submit" id="regiBtn" class="regiBtn" name="btnRegister">
+                가입하기
+              </input>
             </p>
           </form>
         </div>
