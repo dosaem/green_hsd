@@ -704,7 +704,66 @@ header {
   font-size: 16px;
 }
 
-#rst {
+#rst,
+#rstId,
+#rstPw,
+#rstPwCheck,
+#rstName,
+#rstTel {
   width: 366px;
   height: 20px;
+}
+.redText {
+  font-size: 12px;
+  color: #ff6c00;
+}
+.blueText {
+  font-size: 12px;
+  color: #2482de;
+}
+
+/* 로그인 */
+
+.login_box {
+  padding-top: 50px;
+  width: 1200px;
+  height: 600px;
+  margin: auto;
+}
+
+.login_box h2 {
+  font-size: 22px;
+  /* font-weight: bold; */
+  text-align: center;
+  margin-bottom: 40px;
+}
+.login_box > form > span {
+  height: 50px;
+  width: 370px;
+}
+/* .input_area {
+  position: relative;
+  width: 370px;
+  height: 250px;
+  margin: auto;
+}
+.input_area p {
+  height: 52px;
+  margin-bottom: 8px;
+}
+
+.input_area input {
+  width: 370px;
+  padding: 14px 20px 13px;
+  border: 2px solid #d3d8dd;
+  font-size: 18px;
+  box-sizing: border-box;
+} */
+
+.btn_group input {
+  line-height: 48px;
+  width: 100%;
+  height: 52px;
+  padding: 0;
+  font-size: 16px;
 }

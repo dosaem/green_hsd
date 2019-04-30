@@ -2,7 +2,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
   let regiBtn = document.getElementById("inputForm");
   regiBtn.addEventListener("submit", form_check, true);
   let uid = document.getElementById("uid");
-  let rst = document.getElementById("rst");
+  let rstId = document.getElementById("rstId");
+  // let rstId = $("#rstId");
   uid.addEventListener("keyup", getCont);
   let valid = true;
 
@@ -67,14 +68,15 @@ document.addEventListener("DOMContentLoaded", function(event) {
             txt = txt.replace(/\s+$/g, ""); //오른쪽 공백제거
             //alert('id_check.php 페이지에서 반환된 값 : '+txt+'\r필드에서 입력 받은 값 : ' + id);
 
-            // var dp = document.getElementById("rst");
+            // var dp = document.getElementById("rstId");
+            // console.log(dp);
 
             if (txt == "Y") {
-              rst.innerHTML = "이미 가입된 아이디입니다.";
-              // dp.className = "redText";
+              rstId.innerHTML = "이미 가입된 아이디입니다.";
+              rstId.className = "redText";
             } else {
-              rst.innerHTML = "사용할 수 있는 아이디입니다.";
-              // dp.className = "blueText";
+              rstId.innerHTML = "사용할 수 있는 아이디입니다.";
+              rstId.className = "blueText";
             }
           }
         }
@@ -83,10 +85,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
       valid = true;
       return true;
     } else if (what == "") {
-      rst.innerHTML = "";
+      rstId.innerHTML = "";
       valid = false;
     } else {
-      rst.innerHTML = message;
+      rstId.innerHTML = message;
+      rstId.className = "redText";
+
       valid = false;
     }
 
