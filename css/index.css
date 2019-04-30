@@ -2,6 +2,8 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-jp.css);
 
 html,
 body,
@@ -107,9 +109,12 @@ h6 {
   font-weight: normal;
   font-style: normal;
 }
+* {
+  font-family: "Spoqa Han Sans", "Spoqa Han Sans JP", "Sans-serif";
+}
 
 body {
-  font-family: "Spoqa Han Sans", "Spoqa Han Sans JP", "Sans-serif";
+  /* font-family: "Spoqa Han Sans", "Spoqa Han Sans JP", "Sans-serif"; */
   font-size: 13px;
   line-height: 1.5;
   letter-spacing: -1px;
@@ -658,7 +663,10 @@ header {
   text-align: center;
   margin-bottom: 40px;
 }
-
+.register_box > form > span {
+  height: 50px;
+  width: 370px;
+}
 .input_area {
   position: relative;
   width: 370px;
@@ -688,10 +696,15 @@ header {
   height: 48px;
 }
 
-.btn_group button {
+.btn_group input {
   line-height: 48px;
   width: 100%;
   height: 52px;
   padding: 0;
   font-size: 16px;
+}
+
+#rst {
+  width: 366px;
+  height: 20px;
 }

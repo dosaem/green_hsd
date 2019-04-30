@@ -7,12 +7,12 @@ $tel = $_POST["tel"];
 
 include "dbconn.php";
 
-$sql = "INSERT INTO members (uid, pwd, uname, tel)";
+$sql = "INSERT INTO register (uid, pwd, uname, tel)";
 $sql .= " VALUES('$uid', '$pwd', '$uname', '$tel');";
 
 echo $sql;
 
-// $result = mysqli_query($conn, $sql);
+$result = mysqli_query($conn, $sql);
 
 // $id_check_sql = "select uid from members where uid='$uid';";
 
