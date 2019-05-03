@@ -130,6 +130,10 @@ body {
 header {
   background: url(../images/header_back.png) left bottom repeat-x;
 }
+
+#wrap {
+  width: 100%;
+}
 #header {
   width: 1200px;
   /* height: 167px; */
@@ -230,7 +234,7 @@ header {
   height: 650px;
   overflow: hidden;
   position: relative;
-  margin-bottom: 60px;
+  margin-bottom: 15px;
   box-sizing: border-box;
 }
 
@@ -276,12 +280,14 @@ header {
 } */
 
 .best_menu {
-  width: 1200px;
-  margin: auto;
+  /* width: 1200px;
+  margin: auto; */
   overflow: hidden;
   margin-bottom: 50px;
 }
 .best_menu_box {
+  width: 1200px;
+  margin: auto;
   overflow: hidden;
   margin-bottom: 20px;
 }
@@ -304,21 +310,38 @@ header {
   height: 52px;
   text-align: center;
   background-color: #f2f2f2;
+  cursor: pointer;
+  line-height: 1em;
 }
 
-.tab li a {
+/* .tab li a {
   line-height: 1em;
   position: absolute;
   top: 19px;
   left: 96px;
-}
+} */
 
-#onLi {
+/* #onLi {
   background-color: #f2c000;
 }
 
 #onLi a {
   color: #ffffff;
+} */
+ul.tabs li.current {
+  background-color: #f2c000;
+  color: #ffffff;
+}
+
+.tab-content {
+  display: none;
+  /* background: #ededed;
+  padding: 15px;
+  opacity: 0.2; */
+}
+
+.tab-content.current {
+  display: inherit;
 }
 
 .bm_premium {
