@@ -311,7 +311,7 @@ header {
   text-align: center;
   background-color: #f2f2f2;
   cursor: pointer;
-  line-height: 1em;
+  line-height: 3em;
 }
 
 /* .tab li a {
@@ -335,6 +335,8 @@ ul.tabs li.current {
 
 .tab-content {
   display: none;
+  width: 1150px;
+  margin: auto;
   /* background: #ededed;
   padding: 15px;
   opacity: 0.2; */
@@ -344,13 +346,7 @@ ul.tabs li.current {
   display: inherit;
 }
 
-.bm_premium {
-  width: 1150px;
-  margin: auto;
-  /* height: 392px; */
-}
-
-.bm_premium li {
+.tab-content li {
   width: 376px;
   height: 392px;
   float: left;
@@ -358,17 +354,8 @@ ul.tabs li.current {
   position: relative;
   /* text-indent: -9999px; */
 }
-.pbm_02 {
-  margin: 0 11px;
-}
 
-.pbm_01 a {
-  display: block;
-  width: 376px;
-  height: 320px;
-  background: url(../images/pbm_01.jpg) no-repeat center;
-}
-.bm_premium ul li p {
+.tab-content ul li p {
   line-height: 1em;
   text-align: center;
 }
@@ -381,18 +368,53 @@ ul.tabs li.current {
   font-size: 17px;
   margin-top: 8px;
 }
-.pbm_02 a {
+
+.menu_01 a,
+.menu_02 a,
+.menu_03 a {
   display: block;
   width: 376px;
   height: 320px;
-  background: url(../images/pbm_02.jpg) no-repeat center;
+}
+.menu_02 {
+  margin: 0 11px;
 }
 
-.pbm_03 a {
-  display: block;
-  width: 376px;
-  height: 320px;
+#tab-1 .menu_01 a {
+  background: url(../images/pbm_01.jpg) no-repeat center;
+}
+#tab-1 .menu_02 a {
+  background: url(../images/pbm_02.jpg) no-repeat center;
+}
+#tab-1 .menu_03 a {
   background: url(../images/pbm_03.jpg) no-repeat center;
+}
+#tab-2 .menu_01 a {
+  background: url(../images/gm_01.jpg) no-repeat center;
+}
+#tab-2 .menu_02 a {
+  background: url(../images/gm_02.jpg) no-repeat center;
+}
+#tab-2 .menu_03 a {
+  background: url(../images/gm_03.jpg) no-repeat center;
+}
+#tab-3 .menu_01 a {
+  background: url(../images/sm_01.jpg) no-repeat center;
+}
+#tab-3 .menu_02 a {
+  background: url(../images/sm_02.jpg) no-repeat center;
+}
+#tab-3 .menu_03 a {
+  background: url(../images/sm_03.jpg) no-repeat center;
+}
+#tab-4 .menu_01 a {
+  background: url(../images/bm_01.jpg) no-repeat center;
+}
+#tab-4 .menu_02 a {
+  background: url(../images/bm_02.jpg) no-repeat center;
+}
+#tab-4 .menu_03 a {
+  background: url(../images/bm_03.jpg) no-repeat center;
 }
 
 .good_food_mat {
