@@ -234,7 +234,7 @@ header {
   box-sizing: border-box;
 }
 
-.event_01 {
+/* .event_01 {
   display: block;
   width: 1920px;
   height: 650px;
@@ -273,7 +273,7 @@ header {
   position: absolute;
   z-index: -1;
   margin-bottom: 44px;
-}
+} */
 
 .best_menu {
   width: 1200px;
@@ -760,10 +760,22 @@ header {
   box-sizing: border-box;
 } */
 
-.btn_group input {
+.loginBtn {
+  margin-top: 20px;
+  color: #373737;
+  background-color: #f6ca00;
+  /* border: 2px solid #bcc2c9; */
+  cursor: default;
+  width: 366px;
+  height: 48px;
+}
+
+/* 
+.btn_group button {
+  margin-top: 20px;
   line-height: 48px;
   width: 100%;
   height: 52px;
   padding: 0;
   font-size: 16px;
-}
+} */

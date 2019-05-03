@@ -23,6 +23,7 @@
     <script src="js/jquery.bxslider.js"></script>
     <script src="js/index.js"></script>
     <script src="js/register.js"></script>
+    <script src="js/login.js"></script>
   </head>
   <body>
     <div id="wrap">
@@ -95,7 +96,7 @@
             action="php/login_ok.php"
             method="POST"
             class="input_area"
-            id="inputForm"
+            id="loginForm"
           >
             <p>
               <input
@@ -114,21 +115,23 @@
                 id="pwd"
               />
             </p>
+            <div id="rst"></div>
 
-            <p class="btn_group">
+            <!-- <p class="btn_group">
               <button type="button" onclick="form_check(this.form)">
                 로그인
               </button>
-            </p>
-            <!-- <p class="btn_group">
+            </p> -->
+
+            <p class="btn_group">
               <input
                 type="submit"
-                id="regiBtn"
-                class="regiBtn"
-                name="btnRegister"
-                value="가입하기"
+                id="loginBtn"
+                class="loginBtn"
+                name="btnLogin"
+                value="로그인"
               />
-            </p> -->
+            </p>
           </form>
         </div>
       </div>
