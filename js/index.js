@@ -1,7 +1,10 @@
 $(document).ready(function() {
+  let mapBtn = document.getElementById("mapBtn");
+  // mapBtn.addEventListener("click", submit);
   menubar();
   slide();
   tabmenu();
+  searchStore();
 });
 
 function slide() {
@@ -33,5 +36,12 @@ function tabmenu() {
 
     $(this).addClass("current");
     $("#" + tab_id).addClass("current");
+  });
+}
+
+function searchStore() {
+  var availableTags = ["역삼동", "역삼1동", "역삼2동"];
+  $("#store_search").autocomplete({
+    source: availableTags
   });
 }

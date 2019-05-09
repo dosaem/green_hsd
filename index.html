@@ -18,8 +18,16 @@
       media="screen"
       href="css/jquery.bxslider.css"
     />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="css/jquery-ui.css"
+    />
+
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery-ui.js"></script>
     <script src="js/index.js"></script>
   </head>
   <body>
@@ -71,7 +79,7 @@
                 <a href="#">스토어</a>
                 <div class="dnav">
                   <ul>
-                    <li><a href="#">주변점포찾기</a></li>
+                    <li><a href="map">주변점포찾기</a></li>
                   </ul>
                 </div>
               </li>
@@ -233,14 +241,18 @@
               확인해보세요.
             </h3>
             <div class="find_store_search">
-              <form name="findstore" method="post" action="#">
+              <form name="findstore" method="get" action="map.html">
                 <input
                   id="store_search"
                   name="main_search"
                   title="매장검색"
                   placeholder="FIND A STORE"
                 />
-                <a href="#">
+                <a
+                  id="mapBtn"
+                  href="#"
+                  onClick="javascript:document.findstore.submit();"
+                >
                   <img
                     src="images/findstore.jpg"
                     width="27px"
