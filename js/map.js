@@ -3,9 +3,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
   searchF.addEventListener("submit", searchPlaces);
 
   var para = getParameter("main_search");
-  console.log(para);
-  console.log("hi");
   // 마커를 담을 배열입니다
+
   var markers = [];
 
   var mapContainer = document.getElementById("map"), // 지도를 표시할 div
@@ -25,6 +24,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   // 키워드로 장소를 검색합니다
   //   searchPlaces();
+  if (para != "") {
+    para += " 한솥";
+    ps.keywordSearch(para, placesSearchCB);
+    history.replaceState({}, null, location.pathname);
+  }
 
   // 키워드 검색을 요청하는 함수입니다
   function searchPlaces(event) {
@@ -229,8 +233,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   function getParameter(name) {
     name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+    // console.log(name);
     var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
       results = regex.exec(location.search);
+
     return results === null
       ? ""
       : decodeURIComponent(results[1].replace(/\+/g, " "));
