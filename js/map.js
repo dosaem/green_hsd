@@ -15,6 +15,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   // 지도를 생성합니다
   var map = new daum.maps.Map(mapContainer, mapOption);
+  function resizeMap() {
+    var mapContainer = document.getElementById("map");
+    mapContainer.style.width = "900px";
+    mapContainer.style.height = "600px";
+    mapContainer.style.left = "280px";
+  }
+
+  resizeMap();
 
   // 장소 검색 객체를 생성합니다
   var ps = new daum.maps.services.Places();

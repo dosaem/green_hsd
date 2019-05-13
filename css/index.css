@@ -841,7 +841,7 @@ ul.tabs li.current {
   width: 1200px;
   height: 600px;
   margin: auto;
-  margin-bottom: 30px;
+  margin-bottom: 140px;
 }
 .map_box h2 {
   font-size: 22px;
@@ -874,10 +874,11 @@ ul.tabs li.current {
 }
 #menu_wrap {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 110px;
+  /* left: 250px; */
   bottom: 0;
   width: 250px;
+  height: 580px;
   margin: 10px 0 30px 10px;
   padding: 5px;
   overflow-y: auto;
@@ -885,6 +886,7 @@ ul.tabs li.current {
   z-index: 1;
   font-size: 12px;
   border-radius: 10px;
+  box-sizing: border-box;
 }
 .bg_white {
   background: #fff;
