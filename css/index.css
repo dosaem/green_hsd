@@ -132,7 +132,7 @@ header {
 }
 
 #wrap {
-  width: 100%;
+  min-width: 1200px;
 }
 #header {
   width: 1200px;
@@ -156,8 +156,21 @@ header {
   margin-top: 32px;
   box-sizing: border-box;
 }
+.fix {
+  width: 1200px;
+  position: fixed;
+  top: 0;
+  background-color: #373737;
+  z-index: 99;
+  height: 60px;
+  margin: auto;
+  margin-top: 25px;
+  padding-bottom: 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
 
-#nav {
+.nav {
   width: 1200px;
   margin: auto;
   margin-top: 25px;
@@ -168,13 +181,13 @@ header {
   z-index: 10px;
   color: red;
 }
-#nav a:hover {
+.nav a:hover {
   color: #f2c000;
 }
-#nav > ul {
+.nav > ul {
   display: inline-block;
 }
-#nav > ul > li {
+.nav > ul > li {
   float: left;
   width: 180px;
   position: relative;
@@ -188,7 +201,7 @@ header {
   height: 150px;
   display: none;
 }
-#nav > ul > li > a {
+.nav > ul > li > a {
   font-size: 19px;
   color: #292929;
   font-weight: bold;
@@ -206,7 +219,7 @@ header {
   color: #666666;
 }
 
-#nav ul ul {
+.nav ul ul {
   display: none;
 }
 
